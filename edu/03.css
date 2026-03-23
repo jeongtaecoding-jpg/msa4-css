@@ -1,0 +1,23 @@
+
+
+#id-style{
+  color: purple;
+}
+
+.class-style{
+  color: green;
+}
+
+h1{
+  color: red;
+}
+
+*{
+    color:rgb(135, 203, 235);
+  /* color:skyblue !important; */
+  /* important 절대 쓰지마! */
+}
+
+h1{
+  color: black;
+}
