@@ -1,0 +1,19 @@
+/* my */strong { 
+  font-size: 1.5em;
+  color: #ad3000;
+}
+
+ul{
+  list-style-type: none;
+  /* byungjoo */ line-height: 2rem;
+}
+
+/* my */ p{
+  line-height: 2rem;
+}
+
+/* byungjoo */ .sub-title{ 
+  color:#ad3000;
+  font-size: 1.5em;
+  font-weight: 900;
+}
