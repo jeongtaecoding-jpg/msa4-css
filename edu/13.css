@@ -1,0 +1,60 @@
+/* 
+  가상(의사)선택자(자주 쓰임)
+  HTML 요소의 상태에 따라 선택해서 스타일을 지정하는 선택
+  `선택자:가상클래스명`
+*/
+
+/* 한번도 방문하지 않은 링크 요소 선택 */
+a:link {
+  /* background-color: yellow; */
+  color: deepskyblue;
+}
+
+/* 한번이라도 방문한 링크 요소 선택 */
+a:visited {
+  /* background-color: brown; */
+  color: crimson;
+}
+
+/* 마우스커서가 올라가 있는 요소를 선택(정말 많이 씀!!!) */
+a:hover {
+  background-color: blueviolet;
+}
+
+/* 포커스(사이트가 강조해주는 부분, Tab키 눌러서 쓰는 것이기도 함)
+        가 적용되어 있는 요소를 선택 */
+a:focus, input:focus {
+  outline: none;
+  border: 3px solid green;
+}
+
+/* 체크된 상태의 input 요소를 모두 선택 */
+input:checked + label {
+  background-color: chartreuse;
+}
+
+/* 해당 선택자의 요소를 제외한 나머지 요소에 스타일 적용 */
+a:not([target]) {
+  color: hotpink !important;
+}
+
+/* :nth-child : 자식요소 선택에 사용하는 가상 선택(nth 앞의 뛰어쓰기 똑바로!)
+  주의! 홀수, 짝수 지정보단  n으로 직접 지정하는 게 우선순위가 높음!
+                몇 번째부터 적용하려면 n + 1 등을 적용
+                몇 번째까지 적용하려면-n + 3 등을 적용 
+                둘 다 적용하면  nth-child(n + 2):nth-child(-n + 4)등을 적용*/ 
+.container :nth-child(n + 2):nth-child(-n + 4) {
+  color: yellow;
+}
+.container :nth-child(odd)/* 홀수 적용 */  {
+  background-color: blue;
+}
+.container :nth-child(even)/* 짝수 적용 */ {
+  background-color: grey;
+}
+
+/* nth-of-type(): 부모 요소 내에서 특정 유형의 n번째 자식을 선택  */
+.container span:nth-of-type(1), 
+.container span:nth-of-type(3){
+  color:orange;
+}
