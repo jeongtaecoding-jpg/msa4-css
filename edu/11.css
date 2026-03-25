@@ -7,8 +7,7 @@
   border: 10px dotted #000000;
 
   /* 배경색의 적용 범위를 지정 */
-  background-clip: border-box;
-
+  background-clip: content-box;
 }
 
 .bg-img{
@@ -20,9 +19,9 @@
   background-attachment: fixed;
 
   /* 배경 이미지의 크기를 설정 */
-  background-size: cover;
+  background-size: contain; /*cover가 일반적*/
 
-  /* 배경 이미지의 반복 방법 지정 */
+  /* 배경 이미지의 반복 방법 지정 (no-repeat가 일반적) */
   background-repeat: no-repeat;
 
   /* 배경 이미지의 초기 위치를 지정 */
@@ -37,9 +36,9 @@
   /* linear-gradient() : 선형 그라데이션 효과를 부여 */
   /* background: linear-gradient(#fff, #000); */
   /* background: linear-gradient(300deg, #fff, #000); */
-  /* background: linear-gradient(#fff 20%, #649823 70%, #000); */
+  background: linear-gradient(#fff 20%, #649823 70%, #000);
 
   /* radial-gradient(): 원형 그라데이션 효과 부여 */
   /* background: radial-gradient(#fff, #000); */
-  background: radial-gradient(circle at 30% 0%,#fff, #000, #fff); 
+  /* background: radial-gradient(circle at 30% 0%,#fff, #000, #fff);  */
 }
