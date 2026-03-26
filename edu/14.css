@@ -1,0 +1,21 @@
+/*
+  가상요소 : 선택한 요소의 지정된 부분에 스타일을 적용 
+*/
+
+/* ::after : 특정 요소의 콘텐츠 뒤에 다른 요소를 삽입 */
+/* ::before : 특정 요소의 콘텐츠 앞에 다른 요소를 삽입 */
+.required-star::after {
+  content: "**";
+  color: red;
+}
+.required-star::before {
+  content: "**";
+  color: rgb(98, 0, 255);
+}
+
+/* 가상 선택자 hover : 마우스를 올렸을 때 나타남(13.css 참조)  */
+.input-hover:hover::after {
+  content: "(ง🔥Д🔥)ง";
+  position: fixed;
+  top: 0;
+}
