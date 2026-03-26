@@ -15,7 +15,7 @@
 
 /* 가상 선택자 hover : 마우스를 올렸을 때 나타남(13.css 참조)  */
 .input-hover:hover::after {
-  content: "(ง🔥Д🔥)ง";
+  content: ":)";
   position: fixed;
   top: 0;
 }
