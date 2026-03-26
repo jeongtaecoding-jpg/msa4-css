@@ -1,0 +1,49 @@
+fieldset{
+  background-image: url("../edu/horse.jpg");
+  width: 700px;
+  height: 50vh;
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  line-height: 40px;
+}
+
+input, textarea{
+  background-color: rgba(189, 189, 189, 0.021);
+}
+
+h1{
+  color:blueviolet;
+}
+
+.required-star::before{
+  content: "*";
+  color: red;
+}
+
+textarea:focus, input:focus {
+  outline: none;  
+  border: 3px solid rgb(255, 0, 0);
+}
+
+input:checked + label {
+  color: rgb(255, 0, 0);
+}
+
+.input-hover:hover::after {
+  background-color: black;
+  color: white;
+  content:"내용을 다시 한 번 확인해 주세요";
+  position: fixed;
+  left: 100px;
+}
+
+.memo > textarea{
+  position: fixed;
+  left: 100px;
+}
+
+button {
+  position: fixed;
+  top: 350px;
+} 
