@@ -1,0 +1,96 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: auto;
+  padding: 10px;
+  background-color: grey;
+  height: 500px;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+}
+
+.item1, .item2, .item3, .item4, .item5, .item6 {   
+
+  background-color: rgb(6, 172, 172);
+  border: 1px solid black;
+}
+
+.item1 {
+ flex : 1 7 40px;
+ align-self: flex-start;
+}
+
+.item2 {
+  flex : 1 1 40px;
+  align-self: flex-end;
+}
+
+.item3{
+  flex : 1;
+}
+
+.item4 {
+ flex : 1;
+}
+
+.item5 {
+  flex : 1;
+}
+
+.item6{
+  flex : 1;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 500px;
+  height: 800px;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+
+.row-box {
+  background-color: antiquewhite;
+  flex: 1;
+  display: flex;
+  gap: 10px;
+}
+
+.nested-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item {
+  background-color: aqua;
+  border: 1px solid black;
+  flex: 1;
+}
+
+/* .nested-box > .item:last-child{
+ flex: 2;
+} */
+
+/*  row-box가 원래는 1번부터 3번까지로 분리해 놨었는데 나중에 합침!!*/
+
+/* 질문 1: row-box에 display: flex를 또 넣는 원리는 무엇인가요? 
+답변: 컨테이너(회색 외곽)에 display: flex를 넣으면 바로 그 자식(row-box)에 적용된다.(후손은 아님)
+최종적으로는 item에 flex = 1을 적용해줘야 하기에 그 사이의 row-box에게도 넣어줘야 한다.
+*/
+
+/* 주의! flex를 사용할 땐 width, height가 아닌 flex-basis 등의 요소를 권장!!!!!  */
