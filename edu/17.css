@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: auto;
+  padding: 10px;
+  background-color: bisque;
+  /* width: 450px; */
+  height: 450px;
+  /* 부모 요소에 flex 지정 */
+  display: flex;
+
+  /* flex-direction: 주축 방향을 정하는 속성 (default: row) */
+  flex-direction: row;
+
+  /* gap: 아이템들 간의 간격을 조절하는 속성 */
+  gap: 20px;
+
+  /* flex-wrap: 줄 바꿈 여부를 지정 (item의 width가 너무 클 때 개행을 해줌)*/
+  /* flex-wrap: wrap; */
+
+  /* flex-flow: 'flex-direction'과 'flex-wrap'을 한 번에 지정 */
+  /* flex-flow: column nowrap; */
+
+  /* justify-content : 주축(item이 정렬되는 기본 방향) 기준으로 아이템들을 정렬하는 방법을 지정 */
+  justify-content : space-evenly;
+
+  /* align-items: 교차축 기준 단일 라인을 정렬하는 방법을 지정 */
+  /* 교차축은 주축과 수직인 축 */
+  /* align-items: baseline; */
+
+  /* align-content: 교차축 기준 여러 라인을 정렬하는 방법을 지정 */
+  align-content: space-evenly;
+}
+
+.container2 {
+  margin: auto;
+  padding: 10px;
+  background-color: blueviolet;
+  width: 450px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  /* align-items: flex-end; */
+  align-content: flex-end;
+}
+
+.item {
+  /* flex-basis: 아이템의 기본 크기를 설정 */
+  /* flex-basis: 0; */
+
+  /* flex-grow: 빈 공간이 생겼을 때 얼마만큼 더 커질지 결정하는 속성 */
+  /* flex-grow: 1; */
+
+  /* flex-shrink: 공간이 부족할 때 얼마나 더 줄어들지 결정하는 속성 */
+  /* flex-shrink: 1; */
+
+  /* flex: flex-grow, flex-shrink, flex-basis를 한 번에 작성하는 속성 (실무 권장) */
+  /* flex: 1 1 0; */
+  /* flex에 한 숫자만 넣음 3개 모두 동시에 적용 */
+  flex: 1;            
+
+  background-color: aqua;
+  border: 1px solid black;
+}
+
+.item:nth-child(3){
+     flex-grow: 2;
+}
