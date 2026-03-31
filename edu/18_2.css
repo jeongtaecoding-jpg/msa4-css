@@ -1,0 +1,26 @@
+/* 만능형 코드!! */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 10px;
+  background-color: #5d5d5d;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.item {
+  background-color: rgb(38, 0, 255);
+  border: 1px solid #000;
+}
+
+@media (max-width: 499px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
