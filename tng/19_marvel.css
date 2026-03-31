@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ .container {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+ }
+
+ /* -------------------------------- */
+ /* 사이드바 관련  */
+ /* -------------------------------- */
+.side-bar {
+  background-color: #ff3b49;
+}
+
+.side-inner {
+  /*
+   grid item인 '.side-bar'에 position을 주어도 적용이 안 되므로
+   'side-bar'의 콘텐츠(자식요소)들을 한 번더 '.side-inner'로 랩핑해 주었다.  
+  */
+  position: sticky;
+  top: 0;
+  color: #ffffff;
+}
+
+.title {
+  /* padding: 50px 25px; 2603031 del pt-edt06-0001 */
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-box {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+ .nav-title {
+  background-color: #ff5662;
+  padding: 8px 15px;
+  font-weight: 900;
+}
+
+.nav-list {
+  list-style: none;
+
+  /* flex 넣은 이유: 아이템들 간의 간격긍을 편하게 조절하기 위해 */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+a {
+  display: inline-block;
+  width: 100%;
+  padding: 3px 15px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-list > li:hover {
+  background-color: black;
+  transition: all 1.5s;
+}
+
+ /* -------------------------------- */
+ /* 메인 관련 */
+ /* -------------------------------- */
+ .main {
+  height: 200vh;/*TODO: 사이드바 완료시 반드시 삭제! */
+  background-color: #f5f5f5;
+ }
+
