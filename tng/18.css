@@ -1,0 +1,110 @@
+/*  내가 한 것 */
+
+/*  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+}
+
+.container {
+  width: 600px;
+  height: 600px;
+  padding: 10px;
+  gap: 10px;
+  background-color: gray;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);;
+  grid-template-rows: 2fr 2fr 1fr 1fr;
+}
+
+.item {
+  background-color: #24ec45;
+  border: 1px solid black;
+}
+
+.item:nth-child(3) {
+  grid-column: 1 / 3;
+}
+
+.item:nth-child(4) {
+  grid-row: 3 / 5;
+} */
+
+
+
+
+
+
+
+/* 강사님께서 하신 것 (row 4개, 가능은 하지만 되도록 가장 작은 아이템에 맞춰 셀을 맞추는 걸 권장)  */
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.item {
+  background-color: aqua;
+  border: 1px solid #000;
+}
+
+.container {
+  width: 600px;
+  height: 600px;
+  background-color: #5d5d5d;
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 2fr 1fr 1fr;
+}
+
+.my-grid-col-span-2 {
+  grid-column: span 2;
+}
+
+.my-grid-row-span-2 {
+  grid-row: span 2;
+} */
+
+
+
+
+
+
+/* 강사님께서 하신 것 (row 6개, 가장 작은 셀인 5과 6을 기준으로) */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 400px;
+  height: 500px;
+  padding: 10px;
+  background-color: #5d5d5d;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.item {
+  background-color: rgb(212, 0, 255);
+  border: 1px solid #000;
+}
+
+.my-grid-col-span-2 {
+  grid-column: span 2;
+}
+
+.my-grid-row-span-2 {
+  grid-row: span 2;
+} 
