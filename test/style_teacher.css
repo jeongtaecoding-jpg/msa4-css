@@ -1,0 +1,116 @@
+:root {
+  /* 변수(variable) --> root에서 선언해야 모든 선택자에서 쓸 수 있다.*/
+  --text-main-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--text-main-color);  /* 변수 사용: var() 이용 */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  background-color: #f89b30;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  opacity: 0.6;
+  transition: all 1.5s;
+  cursor: pointer; 
+}
+
+.btn-middle {
+   width: 250px;
+   font-size: 1.5rem;
+}
+
+header {
+  padding: 30px;
+  background-image: url('./img/img_1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px; 
+}
+
+.header-title {
+  padding: 50px 0;
+  font-size: 3.5rem;
+}
+
+.header-info {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* main 섹션 */
+
+main {
+  padding: 30px 30px 100px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+}
+
+.card {
+  padding: 15px;
+  border: 1px solid #d5d5d5;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.card-img {
+  padding-top: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-img-title {
+  background-color: #000000a2;
+  padding: 20px 10px;
+}
+
+.card-content {
+  color: #000;
+}
+
+
+/* footer 섹션 */
+
+footer {
+  background-color: #333;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
